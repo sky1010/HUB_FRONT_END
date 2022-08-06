@@ -1,0 +1,499 @@
+@font-face {
+  font-family: 'Test';
+  src: local('Test'), url(./fonts/neo-latina-demo-FFP.ttf) format('opentype');
+}
+
+.email-input-login , select, textarea{
+  color: lightgray;
+}
+
+textarea:focus, .email-input-login:focus {
+  color: #ffffff;
+}
+
+.password-input-login , select, textarea{
+  color: lightgray;
+}
+
+textarea:focus, .password-input-login:focus {
+  color: #ffffff;
+}
+
+.container-table {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 20%;
+  width: 100%;
+}
+
+.container-table-item {
+  position: relative;
+  width: 75%;
+  height: 1500px;
+}
+
+
+.templates-upload-form {
+  position: relative;
+  justify-content: center;
+  top: 200px;
+}
+h1 {
+  font-family: 'Test';
+  color: white;
+}
+h1:hover {
+  opacity: 0.5;
+}
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#home-page-title {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 55px;
+  top: 30px;
+}
+
+#home-page-title:hover {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 55px;
+  top: 30px;
+  opacity: 0.5;
+}
+
+.hub-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 8%;
+}
+
+.resource-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  top: 60px;
+}
+.hub-container-right {
+  position: relative;
+  width: 100%;
+  top: 0%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  justify-content: right;
+  flex-wrap:wrap;
+}
+.container-column {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:right;
+}
+
+.welcome-message {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  right: 5%;
+  font-family: 'Test';
+}
+.container-column h3,p {
+  color: white;
+  margin: 0%;
+}
+
+.hub-card {
+  position: relative;
+  padding:10px;
+}
+.resource-card {
+  position: relative;
+  padding:10px;
+}
+
+
+
+.hub-main-button:hover{
+  width: 235px;height:200px;
+  border: solid 0px rgb(42,67,122);
+  box-shadow: 3px -10px 5px  rgb(42,67,122);
+  -moz-box-shadow: 3px -10px 5px rgb(42,67,122);
+  -webkit-box-shadow: 3px -10px 5px  rgb(42,67,122);
+  -o-box-shadow: 3px -10px 5px  rgb(42,67,122);
+  border-radius:35px;
+  opacity: 0.7;
+}
+
+.hub-button-text {
+  position: absolute;
+  left: 9%;
+  top:27%;
+}
+
+.hub-button-text:hover {
+  opacity: 0.5;
+}
+
+.resource-button-text {
+  position: absolute;
+  fill: white;
+  right: 15%;
+  top:-20%;
+  text-align: center;
+  margin: 5px;
+}
+
+.resource-button-text:hover {
+  right: 15%;
+  position:absolute;
+  fill:black;
+}
+
+#home-page-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+#home-page-pswd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#lgn-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#lgn-box {
+  position: relative;
+  top:-100px;
+}
+
+#lgout-btn-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:-70px;
+  right: 75px;
+  
+}
+#lgn-logo {
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:50px;
+}
+
+#form-lgn {
+  width: 450px;
+  margin: auto;
+  position: absolute; 
+  top: 30%;
+}
+
+#logn-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  color: black;
+}
+
+#main-menu-item-block {
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#main-menu-item-blockR {
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#logo-evolve {
+  position: relative;
+  left: -5px;
+  top: 40px;
+  width: 400px;
+  height: 200 px;
+
+  font-family: Neo-Latin;
+}
+
+#login-logo {
+  position: absolute;
+  top: 10%;
+  width: 400px;
+  height: 200 px;
+  right: 17%;
+}
+
+
+#footer {
+  position: fixed;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  color: #ffffff;
+}
+
+
+header {
+  justify-content: center;
+}
+
+#title-pages {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: 'Test';
+  color: white;
+  margin-left: 2%;
+}
+
+#title-pages:hover {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: 'Test';
+  color: white;
+  opacity: 0.55;
+  margin-left: 2%;
+}
+
+.json-panel {
+  position: relative;
+  top: -25px;
+  color: rgba(70, 70, 230, 1);
+}
+h3 {
+  font-family: 'Test';
+  color: whitesmoke;
+}
+#settings-title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#back-btn {
+  position: relative;
+    left: -85px;
+    top: -125px;
+}
+
+#table {
+  position: relative;
+  top: -70px;
+}
+#tableT {
+  position: relative;
+  top: -150px;
+}
+
+#back-btn-spc {
+  position: relative;
+    left: -85px;
+    top: -195px;
+}
+
+
+#table-spc {
+  position: relative;
+  top: -150px;
+}
+
+#modal1 {
+  border: none;
+  width:186px;
+  height:200px;
+  padding:0;
+  position:relative;
+}
+
+
+#reg-btn-ap {
+  position: relative;
+  top: -90px;
+  right: -20px;
+}
+
+#up-res-btn {
+  position: relative;
+  top: -90px;
+  left: 220px;
+}
+
+#avail-res-btn {
+  position: relative;
+  top: -90px;
+  left: 210px;
+}
+#up-docs-btn {
+  position: relative;
+  top: -159px;
+  left: 950px;
+}
+
+#users-table {
+  position: relative;
+  top: -350px;
+  left: -90px;
+}
+
+#user-btn-upload {
+  position: absolute;
+  top: 14%;
+  right: 12.5%;
+}
+
+#File-box {
+  position: relative;
+  top: -50px;
+}
+
+#cont-pub-btn {
+  position:absolute;
+  margin-top: 1%;
+  right:1%;
+}
+
+#res-back-btn {
+  position: relative;
+  top: -60px;
+  right: 25px;
+}
+#link-btn-save {
+  position: relative;
+  top: -50px;
+  left: 500px;
+}
+#editUdata-btn-save {
+  position: relative;
+  top: 75px;
+  left:0px;
+}
+#editUlinks-btn-save {
+  position: relative;
+  top: 10px;
+  left:0px;
+}
+#opts-btn-save {
+  position: relative;
+  top: 30px;
+  left:0px;
+}
+
+#li-names {
+  padding: 5px 5px;
+}
+
+
+.client-list-item {
+  position: relative;
+  top: 0px;
+  padding: 1px 15px;
+}
+
+.client-list-item :hover {
+  color: rgb(70, 117, 206)
+}
+
+.user-list-item :hover {
+  color: rgb(70, 117, 206)
+}
+
+#admin-btns {
+  position: relative;
+  top: -115px;
+  left: 30px;
+}
+
+#template-text {
+  align-items: center;
+}
+
+#navbar-fx {
+  background-color: white;
+}
+
+.chonky-navbarBreadcrumbs {
+  background-color: white;
+  height: 30px;
+  box-shadow: none;
+}
+
+#translation-btn {
+  position: relative;
+  left: 30px;
+  top: -20px;
+}
+
+#json-viewer {
+  position: relative;
+  top:-45px;
+}
+
+#fileBrwser {
+  height: 500px;
+}

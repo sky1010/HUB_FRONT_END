@@ -1,0 +1,17 @@
+{
+  "rootFolderId": "1",
+  "fileMap": {
+    "1": {
+        "id": "1",
+        "name": "Fichier Import",
+        "isDir": true,
+        "childrenIds": ["8"]
+    },
+    "8": {
+        "id": "8", 
+        "name": "512 Digital - UX Services Proposal.pdf", 
+        "location": "Resources/512 Digital - UX Services Proposal.pdf",
+        "parentId":"1"
+    }
+  }
+}
