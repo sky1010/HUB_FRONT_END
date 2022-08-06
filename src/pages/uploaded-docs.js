@@ -1,7 +1,7 @@
 // Styling
 import "../App.css";
 // Dependencies
-import axios from "axios";
+import axios from "src/axios-config";
 import $ from "jquery";
 import React, { Component, useEffect, useState } from "react";
 import MaterialTable from "material-table";

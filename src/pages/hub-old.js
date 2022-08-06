@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios from "src/axios-config";
 import {
   FormControl,
   InputLabel,

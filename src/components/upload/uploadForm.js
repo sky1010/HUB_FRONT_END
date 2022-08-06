@@ -3,7 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import Select from "react-select";
 import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
-import axios from "axios";
+import axios from "src/axios-config";
 //change to uplaodResource method form /actions/upload
 import { upload } from "../../actions/upload";
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import Select from "react-select";
-import axios from "axios";
+import axios from "src/axios-config";
 import "../App.css";
 import UploadForm from "../components/upload/uploadForm";
 import { withTranslation, Trans, getI18n } from "react-i18next";

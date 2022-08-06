@@ -5,7 +5,7 @@ import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
-import axios from "axios";
+import axios from "src/axios-config";
 import { withTranslation, Trans } from "react-i18next";
 import wallpaper from "../../assets/BACKGROUNDS/3.svg";
 

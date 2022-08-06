@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "src/axios-config";
 import setAuthToken from "../utils/setAuthToken";
 //import jwtDecode from "jwt-decode";
 

@@ -3,7 +3,7 @@ import "../App.css";
 // Dependencies
 import React, { Component } from "react";
 import ReactTable from "react-table";
-import axios from "axios";
+import axios from "src/axios-config";
 import { Input } from "reactstrap";
 import { getSuggestedQuery } from "@testing-library/dom";
 

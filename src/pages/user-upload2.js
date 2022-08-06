@@ -5,7 +5,7 @@ import React, { Component, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { withTranslation, Trans } from "react-i18next";
 import { Grid } from "@material-ui/core";
-import axios from "axios";
+import axios from "src/axios-config";
 import wallpaper from "../assets/BACKGROUNDS/3.svg";
 import jwtDecode from "jwt-decode";
 

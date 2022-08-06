@@ -13,7 +13,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Link } from "react-router-dom";
 import { withTranslation, Trans } from "react-i18next";
-import axios from "axios";
+import axios from "src/axios-config";
 
 import Templates_card from "../components/Menu-items/templates-card";
 import Checklists_card from "../components/Menu-items/checklists-card";

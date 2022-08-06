@@ -13,7 +13,7 @@ import jwt_decode from "jwt-decode";
 import setAuthToken from "../utils/setAuthToken";
 import { withTranslation, Trans, getI18n } from "react-i18next";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios from "src/axios-config";
 import { Box, Grid } from "@material-ui/core";
 import {
   FileArray,

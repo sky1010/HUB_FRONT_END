@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import axios from "axios";
+import axios from "src/axios-config";
 import { withTranslation, Trans } from "react-i18next";
 import MaterialTable from "material-table";
 import jwt_decode from "jwt-decode";

@@ -5,7 +5,7 @@ import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../actions/authActions";
 import classnames from "classnames";
-import axios from "axios";
+import axios from "src/axios-config";
 
 class ClientForm extends Component {
   constructor() {

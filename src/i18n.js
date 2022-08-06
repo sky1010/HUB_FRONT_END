@@ -1,12 +1,5 @@
 import i18n from "i18next";
-import axios from "axios";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { useEffect, useState } from "react";
-import { text } from "body-parser";
-import { getJson } from "./pages/translations";
-import translationFR from "./locales/fr/translations.json";
-import translationEN from "./locales/en/translations.json";
-import { easing } from "@material-ui/core";
 import Backend from "i18next-http-backend";
 
 const backendOpts = {

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
-import axios from "axios";
+import axios from "src/axios-config";
 import { Checkbox, Grid, Stack } from "@mui/material";
 import FormGroup from "@mui/material/FormGroup";
 import { InputLabel } from "@mui/material";

@@ -13,7 +13,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Link } from "react-router-dom";
 import { withTranslation, Trans } from "react-i18next";
-import axios from "axios";
+import axios from "src/axios-config";
 import wallpaper from "../assets/BACKGROUNDS/3.svg";
 import hubBibliothèque from "../assets/Logos/LOGOS - WHITE/LEHUBBIBLIOTHEQUE.png";
 import hubResource from "../assets/Logos/LOGOS - WHITE/LEHUBRESOURCE.png";
