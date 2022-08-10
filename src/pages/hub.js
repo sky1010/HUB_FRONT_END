@@ -104,7 +104,9 @@ class Home extends Component {
     let category = "Reports";
     axios.get("/api/users/userLinks/" + id + "/" + category).then((res) => {
       if (res.data) {
-        this.setState({ reportlink: res.data.url });
+        this.setState({
+          reportlink: `${res.data.url}?email=${res.data.User.email}`,
+        });
       }
     });
   };
