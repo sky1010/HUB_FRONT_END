@@ -65,6 +65,7 @@ class fileExplr extends Component {
         this.setState({ clientName: res.data.Client.name });
         const category = "Templates";
         const clientName = res.data.Client.name;
+        // const clientName = res.data.Client.name.replaceAll(" ", "_");
         axios
           .get("/fileMap/filemap_" + category + "_" + clientName + ".json")
           .then((res) => {

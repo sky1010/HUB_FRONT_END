@@ -57,7 +57,7 @@ function Templates(props) {
       const category = "Templates";
       axios
         .get(
-          "http://localhost:3512/fileMap/filemap_" +
+          `${process.env.REACT_APP_API_BASE_URL}/fileMap/filemap_` +
             category +
             "_" +
             res.data.Client.name +
@@ -249,7 +249,9 @@ function Templates(props) {
           } else {
             const file = data.payload.targetFile.location;
             //console.log(data.payload.targetFile.location);
-            window.open("http://localhost:3512/" + file, "_blank").focus();
+            window
+              .open(`${process.env.REACT_APP_API_BASE_URL}/` + file, "_blank")
+              .focus();
           }
         } else if (data.id === ChonkyActions.OpenFiles.id) {
         } else if (data.id === ChonkyActions.MoveFiles.id) {

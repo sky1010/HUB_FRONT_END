@@ -23,8 +23,6 @@ import { withTranslation, Trans } from "react-i18next";
 
 import hubParametre from "../assets/Logos/LOGOS - BLACK/LEHUBPARAMETRE.png";
 import hubSettings from "../assets/Logos/LOGOS - BLACK/LEHUBSETTING.png";
-import { blue } from "@mui/material/colors";
-import { black } from "material-ui/styles/colors";
 
 class AdminPanel extends Component {
   constructor() {
@@ -73,7 +71,6 @@ class AdminPanel extends Component {
       this.Translation(decoded.id);
     }
     this.getUsers();
-    this.getUsersNames();
     this.getClients();
     this.getClientsforEdit();
   }
@@ -329,7 +326,7 @@ class AdminPanel extends Component {
   // @access Admin only
   getUsers = () => {
     axios
-      .get("/api/usersList")
+      .get("/api/users/getUsers")
       .then((res) => {
         if (res.data) {
           this.setState({
