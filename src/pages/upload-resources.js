@@ -1,11 +1,9 @@
-import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Component } from "react";
+import { Trans, withTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Select from "react-select";
 import axios from "src/axios-config";
 import "../App.css";
-import UploadForm from "../components/upload/uploadForm";
-import { withTranslation, Trans, getI18n } from "react-i18next";
-import { convertColorToString } from "material-ui/utils/colorManipulator";
 import wallpaper from "../assets/BACKGROUNDS/3.svg";
 
 class UploadResources extends Component {

@@ -72,7 +72,11 @@ class Home extends Component {
   getUserOpts = (id) => {
     let category = "HUB";
     axios.get("/api/users/getUserOpts/" + id + "/" + category).then((res) => {
-      this.setState({ hubOpts: JSON.parse(res.data.code) });
+      let parse = {};
+      try {
+        parse = JSON.parse(res.data.code);
+      } catch (error) {}
+      this.setState({ hubOpts: parse });
       console.log(JSON.parse(res.data.code));
       console.log(this.state.hubOpts.CAFM);
     });

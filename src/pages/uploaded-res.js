@@ -8,8 +8,12 @@ import MaterialTable from "material-table";
 import wallpaper from "../assets/BACKGROUNDS/3.svg";
 import { withTranslation, Trans } from "react-i18next";
 import { Link } from "react-router-dom";
+import Snackbar from "@mui/material/Snackbar";
+
 function Resources(props) {
   const [resources, setResources] = useState();
+  const [open, setOpen] = React.useState(false);
+  const [message, setMessage] = React.useState("");
 
   useEffect(() => {
     getFiles();
@@ -20,14 +24,21 @@ function Resources(props) {
       setResources(res.data);
     });
   }
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
 
+    setOpen(false);
+  };
   function deleteResources(doc_id, resolve) {
+    debugger;
     axios
       .get("/api/files/deleteResource/" + doc_id)
       .then((res) => {
-        console.log(res.data);
+        setMessage(res.data);
+        setOpen(true);
         resolve();
-        window.location.reload();
       })
       .catch((err) => console.log(err));
   }
@@ -110,6 +121,12 @@ function Resources(props) {
           />
         </div>
       </div>
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message={message}
+      />
     </div>
   );
 }

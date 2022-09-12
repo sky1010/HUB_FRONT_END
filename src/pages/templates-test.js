@@ -40,7 +40,7 @@ function Templates(props) {
   useEffect(() => {
     setToken(getToken());
     axios
-      .get("http://localhost:3512/Resources/filemaptest.json")
+      .get(`${process.env.REACT_APP_API_BASE_URL}/Resources/filemaptest.json`)
       .then((res) => {
         //console.log(res.data["fileMap"])
         setTester(res.data);
@@ -71,7 +71,7 @@ function Templates(props) {
   //GET client's filemap
   function getMap() {
     axios
-      .get("http://localhost:3512/Resources/filemaptest.json")
+      .get(`${process.env.REACT_APP_API_BASE_URL}/Resources/filemaptest.json`)
       .then((res) => {
         //console.log(res.data["fileMap"])
         const obj = JSON.stringify(res.data);
@@ -266,7 +266,7 @@ function Templates(props) {
         const data = { [name]: newFileMap };
         var config = { headers: { "Content-Type": undefined } };
         axios
-          .post("http://localhost:3512/filemap", data, config)
+          .post(`${process.env.REACT_APP_API_BASE_URL}/filemap`, data, config)
           .then((res) => {
             console.log(res);
           })
@@ -303,7 +303,7 @@ function Templates(props) {
         console.log(data);
         var config = { headers: { "Content-Type": undefined } };
         axios
-          .post("http://localhost:3512/filemap", data, config)
+          .post(`${process.env.REACT_APP_API_BASE_URL}/filemap`, data, config)
           .then((res) => {
             console.log(res);
           })
