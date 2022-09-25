@@ -3,7 +3,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 
 const backendOpts = {
-  loadPath: "/" + localStorage.i18nextLng,
+  loadPath: `${process.env.REACT_APP_API_BASE_URL}/` + localStorage.i18nextLng,
   crossDomain: true,
 };
 

@@ -590,11 +590,15 @@ class AdminPanel extends Component {
 
   //Sets the client selected for user list panel
   clientSelection = (id) => {
-    this.setState({
-      selectedClient: id,
-    });
+    this.setState(
+      {
+        selectedClient: id,
+      },
+      () => {
+        this.getClientSelectedDetails();
+      }
+    );
     console.log(this.state.selectedClient);
-    this.getClientSelectedDetails();
   };
 
   //GET User list from selected Client
