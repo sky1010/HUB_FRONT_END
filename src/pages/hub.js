@@ -77,8 +77,6 @@ class Home extends Component {
         parse = JSON.parse(res.data.code);
       } catch (error) {}
       this.setState({ hubOpts: parse });
-      console.log(JSON.parse(res.data.code));
-      console.log(this.state.hubOpts.CAFM);
     });
   };
 
@@ -108,8 +106,9 @@ class Home extends Component {
     let category = "Reports";
     axios.get("/api/users/userLinks/" + id + "/" + category).then((res) => {
       if (res.data) {
+        const encoded = btoa("muzammil@gmail.com");
         this.setState({
-          reportlink: `${res.data.url}?email=${res.data.User.email}`,
+          reportlink: `${res.data.url}?email=${encoded}`,
         });
       }
     });
