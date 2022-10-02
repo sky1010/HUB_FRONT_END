@@ -1,7 +1,6 @@
 import axios from "src/axios-config";
 import setAuthToken from "../utils/setAuthToken";
 //import jwtDecode from "jwt-decode";
-
 import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
 
 // Register User
@@ -9,12 +8,13 @@ export const registerUser = (userData, history) => (dispatch) => {
   axios
     .post("/api/users/registerUser", userData)
     .then((res) => history.push("/admin"))
-    .catch((err) =>
+    .catch((err) => {
+      alert("something went wrong");
       dispatch({
         type: GET_ERRORS,
         payload: err.response.data,
-      })
-    );
+      });
+    });
 };
 
 // Login user w/ Token

@@ -514,12 +514,16 @@ class AdminPanel extends Component {
 
   //Sets the selected user for editing
   userSelction = (id) => {
-    this.setState({
-      selectedUser: id,
-    });
+    this.setState(
+      {
+        selectedUser: id,
+      },
+      () => {
+        this.getSelectedDetails();
+      }
+    );
     this.setState({ userli: "rgb(70, 117, 206)" });
     console.log(this.state.selectedUser);
-    this.getSelectedDetails();
   };
 
   //GET Selected user's details

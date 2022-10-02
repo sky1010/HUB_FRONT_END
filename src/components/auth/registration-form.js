@@ -15,6 +15,7 @@ class RegisterForm extends Component {
     this.state = {
       name: "",
       email: "",
+      userName: "",
       client: "",
       role: "",
       password: "",
@@ -44,21 +45,25 @@ class RegisterForm extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
+    try {
+      const newUser = {
+        name: this.state.name,
+        email: this.state.email,
+        userName: this.state.userName,
+        client: this.state.client,
+        //role: this.state.role.value,
+        password: this.state.password,
+        password2: this.state.password2,
+        //reportlink: this.state.reportlink,
+        //cafmlink: this.state.cafmlink,
+      };
 
-    const newUser = {
-      name: this.state.name,
-      email: this.state.email,
-      client: this.state.client,
-      //role: this.state.role.value,
-      password: this.state.password,
-      password2: this.state.password2,
-      //reportlink: this.state.reportlink,
-      //cafmlink: this.state.cafmlink,
-    };
+      this.props.registerUser(newUser, this.props.history);
 
-    this.props.registerUser(newUser, this.props.history);
-
-    console.log(newUser);
+      console.log(newUser);
+    } catch (error) {
+      debugger;
+    }
   };
 
   getClients = () => {
@@ -137,6 +142,20 @@ class RegisterForm extends Component {
                 />
                 <label htmlFor="email">Email</label>
                 <span className="red-text">{errors.email}</span>
+              </div>
+              <div className="input-field col s12">
+                <input
+                  onChange={this.onChange}
+                  value={this.state.userName}
+                  error={errors.userName}
+                  type="text"
+                  id="userName"
+                  className={classnames("", {
+                    invalid: errors.userName,
+                  })}
+                />
+                <label htmlFor="email">User Name</label>
+                <span className="red-text">{errors.userName}</span>
               </div>
               <div className="input-field col s12"></div>
               <div className="input-field col s12">

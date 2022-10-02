@@ -76,14 +76,14 @@ class Home extends Component {
       try {
         parse = JSON.parse(res.data.code);
       } catch (error) {}
-      this.setState({ hubOpts: parse });
+      this.setState({ hubOpts: { All: parse } });
     });
   };
 
   getLng = (id) => {
     let category = "language";
     axios.get("/api/users/getUserOpts/" + id + "/" + category).then((res) => {
-      this.props.i18n.changeLanguage(res.data.code);
+      this.props.i18n.changeLanguage(res?.data?.code);
     });
   };
   getCAFMLink = (id) => {
