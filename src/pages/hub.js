@@ -76,7 +76,7 @@ class Home extends Component {
       try {
         parse = JSON.parse(res.data.code);
       } catch (error) {}
-      this.setState({ hubOpts: { All: parse } });
+      this.setState({ hubOpts: parse });
     });
   };
 
