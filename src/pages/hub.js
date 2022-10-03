@@ -106,9 +106,9 @@ class Home extends Component {
     let category = "Reports";
     axios.get("/api/users/userLinks/" + id + "/" + category).then((res) => {
       if (res.data) {
-        const encoded = btoa(res.data.User.email);
+        const encoded = btoa(res.data?.User?.userName);
         this.setState({
-          reportlink: `${res.data.url}?email=${encoded}`,
+          reportlink: `${res.data.url}?userName=${encoded ?? ""}`,
         });
       }
     });
